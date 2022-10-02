@@ -20,7 +20,7 @@ php_sury_apache="https://www.dropbox.com/s/jgtddqbmnt59ggb/php_sury_apache.txt?d
 
 tambah_domain_apache() {
         clear
-        echo -e "##### Skrip add domain by Shoya Medan #####"
+        echo -e "##### Skrip add domain by Shoya and Jrtunnel Medan #####"
         echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
         echo -e "Email: \e[33mshoyatech@gmail.com${end}"
         echo "_________________"
@@ -68,7 +68,7 @@ tambah_domain_apache() {
                 then
                         echo
                 else
-                        echo "Sorry, skrip ini hanya bekerja di server yang di setting Hardinal"
+                        echo "Sorry, skrip ini hanya bekerja di server yang di setting Shoya and Jrtunnel Medan"
                         echo "Info lanjut silahkan email ke shoyatech@gmail.com"
                         exit 1
                 fi
@@ -128,7 +128,7 @@ tambah_domain_apache() {
                         echo
                         echo "Selamat, domain ${blu}$domain${end} baru saja ditambahkan ke server ini"
                         echo "Silahkan daftarkan dan ganti NS ke NS Cloudflare, lalu tunggu +/- 30 menit supaya domain bisa diakses."
-                        echo "Video Cloudflare bisa Anda liat di ${blu}http://vid.hardinal.com/2/${end}"
+                        echo "Video Cloudflare bisa Anda liat di ${blu}http://www.jrtunnel.com/2/${end}"
                         echo "_________________"
                         echo
                         echo "Setelah menunggu 30 menit-an, silahkan kunjungi:"
@@ -219,7 +219,7 @@ reconfig_apache() {
 
 tambah_domain_apache_event() {
         clear
-        echo -e "##### Skrip add domain by Hoyaa Medan #####"
+        echo -e "##### Skrip add domain by Shoya and Jrtunnel Medan #####"
         echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
         echo -e "Email: \e[33mjasa@shoyatech.com${end}"
         echo "_________________"
@@ -266,8 +266,8 @@ tambah_domain_apache_event() {
                 then
                         echo
                 else
-                        echo "Sorry, skrip ini hanya bekerja di server yang di setting Hardinal"
-                        echo "Info lanjut silahkan email ke jasa@hoyaa.com"
+                        echo "Sorry, skrip ini hanya bekerja di server yang di setting Shoya and Jrtunnel Medan"
+                        echo "Info lanjut silahkan email ke support@jrtunnel.com"
                         exit 1
                 fi
                 echo "Sip, udah semua.."
@@ -337,7 +337,7 @@ tambah_domain_apache_event() {
                         echo
                         echo "Selamat, domain ${blu}$domain${end} baru saja ditambahkan ke server ini"
                         echo "Silahkan daftarkan dan ganti NS ke NS Cloudflare, lalu tunggu +/- 30 menit supaya domain bisa diakses."
-                        echo "Video Cloudflare bisa Anda liat di ${blu}http://vid.hardinal.com/2/${end}"
+                        echo "Video Cloudflare bisa Anda liat di ${blu}http://www.jrtunnel.com/${end}"
                         echo "_________________"
                         echo
                         echo "Setelah menunggu 30 menit-an, silahkan kunjungi:"
@@ -442,9 +442,9 @@ reconfig_apache_event() {
 
 tambah_domain_nginx() {
         clear
-        echo -e "##### Skrip add domain by Hardinal #####"
+        echo -e "##### Skrip add domain by Shoya and Jrtunnel Medan #####"
         echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
-        echo -e "Email: \e[33mjasa@hardinal.com${end}"
+        echo -e "Email: \e[33msupport@jrtunnel.com${end}"
         echo "_________________"
         rm -fr wordpress latest.zip domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt versi{1..4}.txt versi.txt /var/www/html/info.php
         echo
@@ -491,7 +491,7 @@ tambah_domain_nginx() {
                         echo
                 else
                         echo "Sorry, skrip ini hanya bekerja di server yang di setting Hardinal"
-                        echo "Info lanjut silahkan email ke jasa@hardinal.com"
+                        echo "Info lanjut silahkan email ke support@jrtunnel.com"
                         exit 1
                 fi
                 echo "Sip, udah semua.."
@@ -596,7 +596,7 @@ tambah_domain_nginx() {
                         echo
                         echo "Selamat, domain ${blu}$domain${end} baru saja ditambahkan ke server ini"
                         echo "Silahkan daftarkan dan ganti NS ke NS Cloudflare, lalu tunggu +/- 30 menit supaya domain bisa diakses."
-                        echo "Video Cloudflare bisa Anda liat di ${blu}http://vid.hardinal.com/2/${end}"
+                        echo "Video Cloudflare bisa Anda liat di ${blu}http://www.jrtunnel.com/${end}"
                         echo "_________________"
                         echo
                         echo "Setelah menunggu 30 menit-an, silahkan kunjungi:"
