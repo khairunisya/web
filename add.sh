@@ -62,7 +62,7 @@ tambah_domain_apache() {
                 db_name=`cat db_name.txt`
                 u_name=`cat u_name.txt`
                 rm -f domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt
-                file="/root/.pwdmysql"
+                file="/root/password"
                 if [ -f "$file" ]
                 then
                         echo
@@ -87,7 +87,7 @@ tambah_domain_apache() {
 			ufw allow out to any port 51622 > /dev/null 2>&1
 			service ufw restart > /dev/null 2>&1
                         echo
-                        password_root_mysql=`cat /root/.pwdmysql`
+                        password_root_mysql=`cat /root/password`
                         password_wp_config=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1`
                         mysql -uroot -p$password_root_mysql -e "CREATE DATABASE $db_name /*\!40100 DEFAULT CHARACTER SET utf8 */;"
                         mysql -uroot -p$password_root_mysql -e "CREATE USER $u_name@localhost IDENTIFIED BY '$password_wp_config';"
@@ -259,7 +259,7 @@ tambah_domain_apache_event() {
                 db_name=`cat db_name.txt`
                 u_name=`cat u_name.txt`
                 rm -f domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt
-                file="/root/.pwdmysql"
+                file="/root/password"
                 if [ -f "$file" ]
                 then
                         echo
@@ -284,7 +284,7 @@ tambah_domain_apache_event() {
 			ufw allow out to any port 51622 > /dev/null 2>&1
 			service ufw restart > /dev/null 2>&1
                         echo
-                        password_root_mysql=`cat /root/.pwdmysql`
+                        password_root_mysql=`cat /root/password`
                         password_wp_config=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1`
                         mysql -uroot -p$password_root_mysql -e "CREATE DATABASE $db_name /*\!40100 DEFAULT CHARACTER SET utf8 */;"
                         mysql -uroot -p$password_root_mysql -e "CREATE USER $u_name@localhost IDENTIFIED BY '$password_wp_config';"
@@ -483,7 +483,7 @@ tambah_domain_nginx() {
                 db_name=`cat db_name.txt`
                 u_name=`cat u_name.txt`
                 rm -f domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt
-                file="/root/.pwdmysql"
+                file="/root/password"
                 if [ -f "$file" ]
                 then
                         echo
