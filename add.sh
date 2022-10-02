@@ -510,10 +510,10 @@ tambah_domain_nginx() {
                         echo
                         password_root_mysql=`cat /root/.pwdmysql`
                         password_wp_config=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 12 | head -n 1`
-                        mysql -uroot -p$password_root_mysql -e "CREATE DATABASE $db_name /*\!40100 DEFAULT CHARACTER SET utf8 */;"
-                        mysql -uroot -p$password_root_mysql -e "CREATE USER $u_name@localhost IDENTIFIED BY '$password_wp_config';"
-                        mysql -uroot -p$password_root_mysql -e "GRANT ALL PRIVILEGES ON $db_name.* TO '$u_name'@'localhost';"
-                        mysql -uroot -p$password_root_mysql -e "FLUSH PRIVILEGES;"
+                        mysql -uroot -p $password_root_mysql -e "CREATE DATABASE $db_name /*\!40100 DEFAULT CHARACTER SET utf8 */;"
+                        mysql -uroot -p $password_root_mysql -e "CREATE USER $u_name@localhost IDENTIFIED BY '$password_wp_config';"
+                        mysql -uroot -p $password_root_mysql -e "GRANT ALL PRIVILEGES ON $db_name.* TO '$u_name'@'localhost';"
+                        mysql -uroot -p $password_root_mysql -e "FLUSH PRIVILEGES;"
                         php -r \@phpinfo\(\)\; | grep 'PHP Version' -m 1 > versi-php.txt
                         awk '{ print $4 }' versi-php.txt > versi-php1.txt
                         cut -c -1 versi-php1.txt > jessie_php.txt
