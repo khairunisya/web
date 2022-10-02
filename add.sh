@@ -101,6 +101,7 @@ tambah_domain_apache() {
                         mkdir -p /etc/ssl/$domain
                         openssl req -new -newkey rsa:2048 -days 3650 -nodes -x509 -subj "/C=ID/ST=DKI/L=Jakarta/O=Tech/CN=$domain" -keyout /etc/ssl/$domain/$domain.key -out /etc/ssl/$domain/$domain.crt > /dev/null 2>&1
                         curl -L -# -k --connect-timeout 5 --retry 1 $wordpress_dl -o latest.zip
+                        apt install unzip -y
                         unzip -qq latest.zip
                         rm -f latest.zip
                         mv wordpress /var/www/html/$domain
