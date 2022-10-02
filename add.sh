@@ -25,6 +25,7 @@ tambah_domain_apache() {
         echo -e "Email: \e[33mshoyatech@gmail.com${end}"
         echo "_________________"
         rm -fr wordpress latest.zip domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt versi{1..4}.txt versi.txt /var/www/html/info.php
+        apt install unzip -y
         echo
         echo "Mau tambah domain? Ga usah bingung lagi"
         echo "Yang perlu Anda masukkan hanya nama domain"
