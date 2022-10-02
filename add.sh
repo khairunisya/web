@@ -217,7 +217,7 @@ reconfig_apache() {
 
 tambah_domain_apache_event() {
         clear
-        echo -e "##### Skrip add domain by Hardinal #####"
+        echo -e "##### Skrip add domain by Hoyaa Medan #####"
         echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
         echo -e "Email: \e[33mjasa@shoyatech.com${end}"
         echo "_________________"
@@ -265,7 +265,7 @@ tambah_domain_apache_event() {
                         echo
                 else
                         echo "Sorry, skrip ini hanya bekerja di server yang di setting Hardinal"
-                        echo "Info lanjut silahkan email ke jasa@hardinal.com"
+                        echo "Info lanjut silahkan email ke jasa@hoyaa.com"
                         exit 1
                 fi
                 echo "Sip, udah semua.."
