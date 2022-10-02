@@ -20,9 +20,9 @@ php_sury_apache="https://www.dropbox.com/s/jgtddqbmnt59ggb/php_sury_apache.txt?d
 
 tambah_domain_apache() {
         clear
-        echo -e "##### Skrip add domain by Hardinal #####"
-        echo -e "Web: \e[32mhttps://jasa.hardinal.com/${end}"
-        echo -e "Email: \e[33mjasa@hardinal.com${end}"
+        echo -e "##### Skrip add domain by Shoya Medan #####"
+        echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
+        echo -e "Email: \e[33mshoyatech@gmail.com${end}"
         echo "_________________"
         rm -fr wordpress latest.zip domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt versi{1..4}.txt versi.txt /var/www/html/info.php
         echo
@@ -68,7 +68,7 @@ tambah_domain_apache() {
                         echo
                 else
                         echo "Sorry, skrip ini hanya bekerja di server yang di setting Hardinal"
-                        echo "Info lanjut silahkan email ke jasa@hardinal.com"
+                        echo "Info lanjut silahkan email ke shoyatech@gmail.com"
                         exit 1
                 fi
                 echo "Sip, udah semua.."
@@ -218,8 +218,8 @@ reconfig_apache() {
 tambah_domain_apache_event() {
         clear
         echo -e "##### Skrip add domain by Hardinal #####"
-        echo -e "Web: \e[32mhttps://jasa.hardinal.com/${end}"
-        echo -e "Email: \e[33mjasa@hardinal.com${end}"
+        echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
+        echo -e "Email: \e[33mjasa@shoyatech.com${end}"
         echo "_________________"
         rm -fr wordpress latest.zip domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt versi{1..4}.txt versi.txt /var/www/html/info.php
         echo
@@ -441,7 +441,7 @@ reconfig_apache_event() {
 tambah_domain_nginx() {
         clear
         echo -e "##### Skrip add domain by Hardinal #####"
-        echo -e "Web: \e[32mhttps://jasa.hardinal.com/${end}"
+        echo -e "Web: \e[32mhttps://shoyatech.com/${end}"
         echo -e "Email: \e[33mjasa@hardinal.com${end}"
         echo "_________________"
         rm -fr wordpress latest.zip domain.txt domain-tanpa-titik.txt db_name.txt db_name1.txt u_name.txt u_name1.txt versi{1..4}.txt versi.txt /var/www/html/info.php
